@@ -32,7 +32,7 @@ def expand_universe(galaxy_map: list, scale: int) -> list:
                 col_offset += 1
         row_offset = row_offset * scale - row_offset
         col_offset = col_offset * scale - col_offset
-        expanded_galaxies.append([row_offset + galaxy[0], col_offset + galaxy[1]])
+        expanded_galaxies.append([row_offset + galaxy[0], col_offset + galaxy[1]]) # Manhattan distance
 
     return expanded_galaxies
 
